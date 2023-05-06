@@ -1,0 +1,101 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+    padding: 15px;
+    width: 45%;
+    text-align: center;
+    background-color: aquamarine;
+}
+.input>label{
+    margin: auto;
+}
+#input-text{
+    width: 50%;
+    height: 25px;
+    margin: auto;
+    outline: none;
+    border: none;
+    border-bottom: solid 2px rgb(122, 122, 122);
+    border-radius: 5px;
+    background-color: transparent;
+    font-family: sans-serif;
+    font-size: 15px;
+}
+.item{
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: space-evenly;
+    padding: 6px;
+    border-top: solid 2px white;
+}
+.title-movie{
+    display: inline-block;
+    margin: auto;
+    width: 50%;
+}
+.output{
+    display: flex;
+    box-sizing: border-box;
+    width: 45%;
+    flex-direction: column;
+    background-color: chocolate;
+    height: calc(100vh - 75px);
+    overflow-y: scroll;
+}
+button{
+    outline-style: none;
+    background-color: transparent;
+    border: none;
+    outline-style: none;
+    padding: 8px 13px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 9px;
+    margin: 6px;
+}
+.input .button-enabled{
+    background-color: chartreuse;
+    color: rgb(20, 80, 0);   
+}
+.input .button-enabled:hover{
+    background-color: rgb(59, 105, 12);
+    color: rgb(255, 255, 255);   
+}
+.item>button:last-child{
+    background-color: rgb(255, 0, 0);
+    color: rgb(255, 255, 255);  
+}
+.item>button:last-child:hover{
+    background-color: rgb(247, 69, 69);
+    color: rgb(255, 255, 255);  
+}
+.item .button-enabled{
+    background-color: rgb(0, 119, 255);
+    color: rgb(255, 255, 255);  
+}
+.item .button-enabled:hover{
+    background-color: rgb(46, 141, 248);
+    color: rgb(255, 255, 255);  
+}
+.button-disabled{
+    background-color: rgb(101, 111, 122);
+    color: rgb(194, 189, 189);  
+}
