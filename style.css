@@ -7,9 +7,9 @@ body{
 .container{
     display: flex;
     flex-direction: column;
-    align-items: center;
     width: 100%;
-    background-image: url(/img/background1.jpg);
+    height: 100vh;
+    background-image: url("./img/background1.jpg");
 }
 
 .input{
@@ -20,10 +20,10 @@ body{
     box-sizing: border-box;
     padding: 15px;
     width: 45%;
-    margin: auto;
+    margin: 0 auto;
     height: 12vh;
     text-align: center;
-    background-image: url(/img/background.jpg);
+    background-image: url("./img/background.jpg");
     object-fit: scale-down;
 }
 .input>label{
@@ -61,10 +61,10 @@ body{
     display: flex;
     box-sizing: border-box;
     width: 45%;
-    margin: auto;
+    margin: 0 auto;
     flex-direction: column;
     background-color: rgb(35, 170, 204);
-    height: calc(100vh - 12vh);
+    height: auto;
     overflow-y: scroll;
 }
 button{
@@ -115,7 +115,7 @@ button{
     }
     .output{
         width: 80%;
-        height: calc(100vh - 8vh);
+        height: auto;
     }
     button{
         font-size: 11px;
