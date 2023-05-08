@@ -8,6 +8,8 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
+    background-image: url(/img/background1.jpg);
 }
 
 .input{
@@ -18,16 +20,20 @@ body{
     box-sizing: border-box;
     padding: 15px;
     width: 45%;
+    margin: auto;
+    height: 12vh;
     text-align: center;
-    background-color: aquamarine;
+    background-image: url(/img/background.jpg);
+    object-fit: scale-down;
 }
 .input>label{
     margin: auto;
+    font-weight: bold;
 }
 #input-text{
     width: 50%;
     height: 25px;
-    margin: auto;
+    margin: auto 8px;
     outline: none;
     border: none;
     border-bottom: solid 2px rgb(122, 122, 122);
@@ -55,9 +61,10 @@ body{
     display: flex;
     box-sizing: border-box;
     width: 45%;
+    margin: auto;
     flex-direction: column;
-    background-color: chocolate;
-    height: calc(100vh - 75px);
+    background-color: rgb(35, 170, 204);
+    height: calc(100vh - 12vh);
     overflow-y: scroll;
 }
 button{
@@ -69,11 +76,11 @@ button{
     font-size: 15px;
     font-weight: bold;
     border-radius: 9px;
-    margin: 6px;
+    margin: auto;
 }
 .input .button-enabled{
     background-color: chartreuse;
-    color: rgb(20, 80, 0);   
+    color: rgb(0, 0, 0);   
 }
 .input .button-enabled:hover{
     background-color: rgb(59, 105, 12);
@@ -88,14 +95,36 @@ button{
     color: rgb(255, 255, 255);  
 }
 .item .button-enabled{
-    background-color: rgb(0, 119, 255);
-    color: rgb(255, 255, 255);  
+    background-color: rgb(240, 236, 18);
+    color: rgb(0, 0, 0);  
 }
 .item .button-enabled:hover{
-    background-color: rgb(46, 141, 248);
+    background-color: rgb(233, 228, 159);
     color: rgb(255, 255, 255);  
 }
 .button-disabled{
     background-color: rgb(101, 111, 122);
     color: rgb(194, 189, 189);  
+}
+
+/* Segun medidas recomendadas para móviles */
+@media (max-width: 768px) {
+    .input{
+        width: 80%;
+        height: 8vh;
+    }
+    .output{
+        width: 80%;
+        height: calc(100vh - 8vh);
+    }
+    button{
+        font-size: 11px;
+    }
+    .item h3{
+        font-size: 12px;
+    }
+    .input label{
+        font-size: 12px;
+    }
+
 }
